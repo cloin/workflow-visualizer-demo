@@ -4,7 +4,7 @@
   connection: local
   vars:
     message:
-    sleep:
+    sleep: 1
 
   tasks:
   - name: Sleep for some time
