@@ -1,0 +1,16 @@
+---
+- name: Debug task
+  hosts: localhost
+  connection: local
+  vars:
+    message:
+    sleep:
+
+  tasks:
+  - name: Sleep for some time
+    ansible.builtin.pause:
+      seconds: "{{ sleep }}"
+
+  - name: Print debug message
+    ansible.builtin.debug:
+      msg: "{{ message }}"
