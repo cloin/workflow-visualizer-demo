@@ -2,6 +2,7 @@
 - name: Debug task
   hosts: localhost
   connection: local
+  gather_facts: false
   vars:
     message:
     sleep: 1
